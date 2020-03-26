@@ -1,19 +1,27 @@
+# Niranjan prof
+
+#https://github.com/Niranjanprof
+#Mailme @ niranjannb7777@gmail.com
+
+# Rock Paper Scissors
+
+
 import random
-def name_check(name):
+def name_check(name):                      #  to check player name
     if (name.strip() == ""):
         return "Guest"
     return name
-def disp_hand(name,hand):
+def disp_hand(name,hand):                   # to print the corresponding moves by player and computer
     hands=['Rock','Paper','Scissors']
     print(name+" picked "+hands[hand])
-def judge(player,computer):
+def judge(player,computer):                 # to Judge the winner
     if( player==computer ):
         return 'Draw'
     elif player == 0 and computer == 1 or player == 1 and computer == 2 or player == 2 and computer == 0:
         return  'Lose'
     else:
         return 'Win'
-def validate(hand):
+def validate(hand):                         # to validate user entry regarding the moves
     if  0<=hand<=2:
        return True
     print("\n*******Wrong Input*******\n")
