@@ -1,4 +1,4 @@
-# Rock Paper Salt
+# Rock Paper Scissors
 
 Simple Fun
 
